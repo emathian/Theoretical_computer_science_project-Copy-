@@ -1,0 +1,110 @@
+\documentclass[12pt]{article}
+\usepackage[nomarginpar, textwidth = 16cm]{geometry}
+\usepackage[english]{babel}
+%\usepackage{natbib}
+\usepackage{url}
+\usepackage[utf8x]{inputenc}
+
+
+
+\usepackage{amsmath}
+
+
+
+%for a medium sized matrix :
+\usepackage{nccmath}
+\newenvironment{mpmatrix}{\begin{medsize}\begin{pmatrix}}%
+		{\end{pmatrix}\end{medsize}}%
+%%%
+\usepackage{algpseudocode}
+\usepackage{graphicx}
+\usepackage[svgnames]{xcolor}
+\usepackage{multirow}
+\graphicspath{{images/}}
+\usepackage{parskip}
+\usepackage{fancyhdr}
+\usepackage{vmargin}
+%\setmarginsrb{3 cm}{2.5 cm}{3 cm}{2.5 cm}{1 cm}{1.5 cm}{1 cm}{1.5 cm}
+\usepackage[T1]{fontenc}
+\usepackage{url}
+\usepackage{pdfpages}
+\usepackage{url}
+\usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage{subcaption}
+\usepackage{empheq, cases}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{lmodern}
+\usepackage{listings}
+\usepackage{float}
+\lstset{language=TeX,basicstyle=\ttfamily,numbers=left,linewidth=\linewidth,
+	breaklines=true}
+\xdefinecolor{alice}{named}{AliceBlue}
+\xdefinecolor{saumon}{named}{PeachPuff}
+\definecolor{myred1}{RGB}{255, 0, 0}
+\definecolor{mygreen1}{RGB}{0, 126, 0}
+\definecolor{myblue1}{RGB}{0, 0, 255}
+\definecolor{myOrange}{RGB}{90, 60, 0}
+
+\title{OpenOrd Algorithm }	% Title
+\author{ Emilie MATHIAN}								% Author
+\date{\today}		% Date
+
+\makeatletter
+\let\thetitle\@title
+\let\theauthor\@author
+\let\thedate\@date
+\makeatother
+
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{\theauthor}
+\lhead{OpenOrd Algorithm }
+\cfoot{\thepage}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+	
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\begin{titlepage}
+		\centering
+		\vspace*{0.5 cm}
+        \includegraphics[scale=0.05]{insa.png}~\\[1cm]	
+		%\textsc{\LARGE Institut National des Sciences Apliquées de Lyon}\\[2.0 cm]	% University Name
+		\textsc{\Large 4BIM}\\[0.5 cm]				% Course Code
+		\rule{\linewidth}{0.2 mm} \\[0.4 cm]
+		{ \huge \bfseries \thetitle}\\
+		\rule{\linewidth}{0.2 mm} \\[1.5 cm]
+		
+		\theauthor
+		
+		{\thedate}\\[2 cm]
+		
+		\vfill
+		
+		
+		
+	\end{titlepage}
+	\pagebreak
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\pagebreak
+	
+	\tableofcontents
+	
+	\pagebreak
+	
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Est-ce que tu as envoyé le projet aux profs?
+\section{Motivations}
+\section{Adaptations aux données génomique}
+\section{Algorithme}
+\subsection{Forced Graph Layout}
+\subsection{Edges cutting}
+\subsection{Multilevels}
+\section{Discussion}
+
+
+
+\end{document}
